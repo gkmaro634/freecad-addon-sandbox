@@ -15,6 +15,12 @@ class SandboxWorkbench (Workbench):
 
     def Initialize(self):
         '''This function is executed when FreeCAD starts'''
+        import Commands
+        
+        self.list = ['Export(stl files)']
+        self.menu = self.list
+        self.appendToolbar(self.__class__.MenuText, self.list)
+        self.appendMenu(self.__class__.MenuText, self.menu)
         # import here all the needed files that create your FreeCAD commands
         # import Ray
         # import OpticalObject
