@@ -6,7 +6,6 @@ import FreeCAD
 from PySide import QtGui
 import Mesh
 import json
-# import math
 
 _icondir_ = os.path.join(os.path.dirname(__file__), 'resources')
 
